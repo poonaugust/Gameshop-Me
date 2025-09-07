@@ -9,6 +9,5 @@ type Role struct {
 
 	
 
-	RolePermission []RolePermission `gorm:"foreignKey:RoleID"`
 	Users []User  `gorm:"foreignKey:RoleID"`
 }

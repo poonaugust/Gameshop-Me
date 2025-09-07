@@ -30,8 +30,6 @@ func SetupDatabase() {
 	err := db.AutoMigrate(
 		&role.User{},
 		&role.Role{},
-		&role.Permission{},
-		&role.RolePermission{},
 		&ws.GameUser{},
 		&ws.Game{},
 		&ws.Mod{},
